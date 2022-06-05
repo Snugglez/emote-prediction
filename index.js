@@ -16,10 +16,10 @@ module.exports = function reee(d) {
     })
 
     d.hook('S_SOCIAL', '*', (e) => {
-        if (!snug.me.is(e.target)) return
+        if (!d.game.me.is(e.target)) return
         if (d.settings.idles && [31, 32, 33].includes(e.animation)) return
         return false
     })
 
-    function cSocial(e) { d.send('S_SOCIAL', '*', { target: snug.me.gameId, animation: e.emote }) }
+    function cSocial(e) { d.send('S_SOCIAL', '*', { target: d.game.me.gameId, animation: e.emote }) }
 }
