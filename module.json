@@ -1,0 +1,16 @@
+{
+	"disableAutoUpdate": false,
+	"name": "emote-prediction",
+	"author": "Snug",
+	"description": "Emulates emotes to remove ping tax with confirguable delay to sitting for teabag purposes",
+	"version": "1",
+	"donationUrl": "https://play.google.com/store/apps/details?id=com.CarvedGames.SD",
+	"options": {
+		"settingsVersion": 1,
+		"settingsFile": "config.json",
+		"settingsMigrator": "config_generator.js"
+	},
+	"servers": [
+		"https://raw.githubusercontent.com/Snugglez/emote-prediction/main/"
+	]
+}
